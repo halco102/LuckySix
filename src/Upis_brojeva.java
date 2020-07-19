@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Upis_brojeva extends Start{
+public class Upis_brojeva {
 
 	private int [] uneseni_brojevi= new int[6];
 	private int brojevi;

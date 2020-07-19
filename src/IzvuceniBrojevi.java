@@ -1,4 +1,4 @@
-import java.text.Format;
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -7,34 +7,14 @@ import java.util.stream.Stream;
 public class IzvuceniBrojevi extends Start{
 	
    private int size = 48;
-   private int izvuceniBrojevi[]=new int [30];
+   private int izvuceniBrojevi[]=new int [35];
 
   
    public void ispis() {
-	   /*for(int i  = 0 ; i <this.izvuceniBrojevi.length;i++) {
+	   for(int i  = 0 ; i <this.izvuceniBrojevi.length;i++) {
 		   System.out.println("Izvuceni broj " + i + " : " +this.izvuceniBrojevi[i]);
-	   }*/
-	   int temp = 0;
-	   int matrica[][] = new int [2][9];
-	   int drugaMatrica[][]= new int [4][3];
-	   
-	   for(int i = 0 ; i < 2 ; i ++ ) {
-		   if(i == 0 ) {
-			   for(int j = 0 ; j < 9 ; j ++) {
-				   matrica[i][j]=this.izvuceniBrojevi[j];
-				   System.out.println(matrica[i][j]+"\t");
-			   }
-		   }else {
-			   for(int k = 21 ; k < 30 ; k ++) {
-				   matrica[i][k-21]=this.izvuceniBrojevi[k];
 
-				   System.out.println(matrica[i][k-21]+"\t");
-			   }
-		   }
-		   
 	   }
-	   
-	 
    }
    
    IzvuceniBrojevi(){

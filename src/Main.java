@@ -6,7 +6,7 @@ public class Main {
 		System.out.println("|----------------------------------------------|");
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		Upis_brojeva Upis = new Upis_brojeva();
@@ -24,8 +24,11 @@ public class Main {
 		dash();
 		//ispis izbacenih kuglica
 		IzvuceniBrojevi.setBrojevi();
-		IzvuceniBrojevi.ispis();
+		//IzvuceniBrojevi.ispis();
+		IzvuceniBrojevi.dobitak(IzvuceniBrojevi.getBrojevi()); //ispis para i brojeva
 		dash();
+		IzvuceniBrojevi.provjeraDobitka(Upis.getBrojevi());
+		
 	
 		//end
 		
